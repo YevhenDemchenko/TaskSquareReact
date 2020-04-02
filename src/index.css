@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.root {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #48AAE6;
+  margin: 55px;
+}
+.root table {
+  border-collapse: collapse;
+}
+.root table td {
+  background-color: #48AAE6;
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+}
+.root button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  color: white;
+  font-size: 24px;
+  margin: 2px;
+  cursor: pointer;
+  transition: left .35s ease, top .65s ease, opacity .65s ease;
+}
+.root button:hover {
+  cursor: pointer;
+  opacity: .75;
+  transition: 0.3s;
+}
+.root button:not(:hover) {
+  transition: 0.2s;
+}
+.root .addRow {
+  background-color: #F3A500;
+  top: 100.5%;
+  left: 0;
+}
+.root .addCol {
+  background-color: #F3A500;
+  top: 0;
+  left: 100.5%;
+}
+.root .delRow {
+  background-color: #B20000;
+  visibility: hidden;
+  right: 100.5%;
+  top: 0;
+}
+.root .delCol {
+  background-color: #B20000;
+  visibility: hidden;
+  bottom: 100.5%;
+  left: 0;
+}
